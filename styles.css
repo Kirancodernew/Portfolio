@@ -1,0 +1,224 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+}
+.nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(35, 45, 55);
+    /* align-items: center; */
+    height: 50px;
+    /* margin: 0; */
+}
+.leftBar{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-size: 1rem;
+
+}
+.leftBar .logo{
+    /* margin: 4px; */
+    /* width: 20%; */
+    object-fit: contain;
+    height: 50%;
+    border-radius: 50%;
+}
+.rightBar ul{
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    /* padding-top: 15px; */
+    /* margin: 0px 12px; */
+}
+.rightBar ul li{
+    /* border: solid black 1px; */
+    margin: 0px 12px;
+    /* padding: 6px; */
+    /* text-align: ; */
+}
+.rightBar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.rightBar ul li a:hover{
+   
+    color: rgb(121, 121, 159);
+    font-size: 1.02rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3.5rem 1rem;
+}
+.leftSection{
+    /* background-color: red; */
+    /* width: 30%; */
+    font-size: 3rem;
+    /* text-align: center; */
+    /* margin: 80px 0px; */
+}
+.rightSection{
+    /* background-color: red; */
+    width: 40%;
+}
+.rightSection img{
+    width: 90%;
+    /* margin: 31px 0px; */
+}
+.purple{
+    color: rgb(145, 55, 228);
+}
+#element{
+    color: rgb(157, 77, 231);
+}
+.leftSection .btn{
+    padding: 8px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: .7rem;
+    cursor: pointer;
+}
+.secondSection{
+    max-width: 80%;
+
+    margin: auto;
+}
+main hr{
+    border: 0;
+    background-color: rgb(149, 159, 250);
+    height: 1px;
+    max-width: 80v;
+    margin: 20px 70px;
+}
+.text-gray{
+    color: gray;
+}
+/* .secondSection{
+    height: 100%;
+} */
+.secondSection h1{
+    font-size: 1.7rem;
+}
+.horizontalLine{
+    border-top: 2px solid rgb(122, 118, 118);
+    margin: 56px 0px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.horizontalLine .verticalLine{
+    height: 40rem;
+}
+.top-image{
+    width: 43px;
+    position: relative;
+    top: 44px;
+    left: 19px;
+    border-radius: 50%;
+}
+.vertical-title{
+    width: 169px;
+    position: relative;
+    top: 52px;
+    /* left: -54px; */
+}
+.vertical-disc{
+    width: 150px;
+    font-size: 8px;
+    position: relative;
+    /* left: -69px; */
+    top: 65px;
+    color: rgb(160, 173, 166)
+    /* text-align: center; */
+}
+footer ul{
+    list-style: none;
+
+}
+footer ul a{
+    text-decoration: none;
+    color: white;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .rights{
+    /* border: solid; */
+    text-align: center;
+ 
+    /* height: 100px; */
+    margin: 4rem 0;
+    color: rgba(234, 213, 213, 0.79);
+}
+
+@media screen and (max-width:1200px) {
+    .horizontalLine{
+        border-top: none;
+        border-left: 2px solid rgb(122, 118, 118);
+        flex-direction: column;
+    }
+    .horizontalLine .verticalLine{
+        height: unset;
+        /* width: 2px; */
+        /* background-color: pink; */
+    }
+    .vertical-title, .vertical-disc{
+        left: 90px;
+    }
+    .verticalLine .top-image{
+        top: 100px;
+        left: 10px;
+    }
+}
+@media screen and ( max-width:1100px) {
+    .firstSection .leftSection{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:700px){
+    .firstSection .leftSection{
+        font-size: 1.5rem;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    .nav{
+        justify-content: space-between;
+    }
+    .nav .leftBar{
+        font-size: .7rem;
+    }
+    .nav .rightBar{
+        font-size: .65rem;
+    }
+    .firstSection .leftSection{
+        font-size: 1rem;
+    }
+    .secondSection h1{
+        font-size: 1.3rem;
+    }
+    .text-gray{
+        font-size: .7rem;
+    }
+    footer .rights{
+        font-size: .7rem;
+    }
+
+}
